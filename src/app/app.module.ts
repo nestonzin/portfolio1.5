@@ -8,6 +8,12 @@ import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectsComponent } from './projects/projects.component';
+import { FooterComponent } from './footer/footer.component';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { DarkModeToggleComponent } from './dark-mode-toggle/dark-mode-toggle.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+
 
 @NgModule({
   declarations: [
@@ -15,14 +21,19 @@ import { ProjectsComponent } from './projects/projects.component';
     AboutComponent,
     HomeComponent,
     NavbarComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    FooterComponent,
+    DarkModeToggleComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatSlideToggleModule,
+    MatIconModule,
+    MatButtonModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
