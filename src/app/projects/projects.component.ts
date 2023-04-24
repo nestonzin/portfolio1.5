@@ -18,7 +18,6 @@ interface Project {
   styleUrls: ['./projects.component.scss'],
 })
 export class ProjectsComponent {
-  [x: string]: any;
   featuredProjects: featuredProjects[] = [
     {
       title: 'Lost Ark To do List',
@@ -45,7 +44,7 @@ export class ProjectsComponent {
     },
     {
       title: 'SmartStats',
-      url: 'https://lost-ark-to-do.vercel.app',
+      url: 'https://smartstats.vercel.app',
       year: 2022,
     },
     {
